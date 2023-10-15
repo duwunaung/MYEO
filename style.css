@@ -183,3 +183,15 @@ section.join p::selection{
 p::after {
     content: "...";
 }
+
+@media screen and (max-width:800px) {
+    .banner .welcome h2 {
+        font-size: 20px;
+    }
+    /* .banner .welcome h2 br {
+        display: none;
+    } */
+    .banner .welcome {
+        margin-top: 20%;
+    }
+}
