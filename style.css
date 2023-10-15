@@ -60,6 +60,7 @@ nav{
     padding: 20px;
     position: sticky;
     top: 120px; /* Explain */
+    z-index: 1;
 }
 
 nav ul {
@@ -135,6 +136,8 @@ form input {
     font-size: 22px;
     border-radius: 20px;
     border: 4px solid white;
+    text-align: center;
+    width: 80%;
 }
 
 footer {
@@ -142,4 +145,41 @@ footer {
     padding: 10px;
     color: white;
     background-color: coral;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+
+.images li:hover {
+    position: relative;
+    top: -4px;
+}
+
+form input:focus{
+    border: 3px dashed coral;
+    outline: none;
+}
+
+form input:valid{
+    border:3px solid green;
+}
+
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+section.join p::first-letter{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+section.join p::selection{
+    background-color: coral;
+}
+
+p::after {
+    content: "...";
 }
